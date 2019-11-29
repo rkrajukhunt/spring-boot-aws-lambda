@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScans;
 import com.gargoylesoftware.htmlunit.WebClient;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.gargoylesoftware.htmlunit")
+// @ComponentScan(basePackages = "com.gargoylesoftware.htmlunit")
 public class JobiakAwsLambdaApplication {
 
 	public static void main(String[] args) {
