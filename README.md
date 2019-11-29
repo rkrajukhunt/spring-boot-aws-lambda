@@ -1,4 +1,4 @@
 # AWS Configuration 
-  Runtime: JDK 11
-  Handler Name : ai.jobiak.lambda.handler.GoogleFiltersScrapeFunctionHandler
-  Timeout : 10 Min
+  Runtime: JDK 11 <br/>
+  Handler Name : ai.jobiak.lambda.handler.GoogleFiltersScrapeFunctionHandler <br/>
+  Timeout : 10 Min <br/>
