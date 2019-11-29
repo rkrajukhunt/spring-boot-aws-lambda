@@ -1,5 +1,3 @@
-jobiak-aws-lambda
-
 # AWS Configuration 
   Runtime: JDK 11
   Handler Name : ai.jobiak.lambda.handler.GoogleFiltersScrapeFunctionHandler
