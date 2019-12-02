@@ -58,8 +58,8 @@ public class GoogleFiltersScrapeService extends Jobiak {
 						if (t.hasAttribute("data-facet") && t.getAttribute("data-facet").equalsIgnoreCase(titleAttr)) {
 							if (!t.asText().equalsIgnoreCase("__placeholder__")
 									&& !t.asText().equalsIgnoreCase("all")) {
-								// System.out.println(":::t::"+ t.asText());
-								catMap.get(titleKeys.get(i)).add(t.asText());
+								if(t.asText().length() > 0)
+									catMap.get(titleKeys.get(i)).add(t.asText());
 							}
 						}
 					}
@@ -69,7 +69,6 @@ public class GoogleFiltersScrapeService extends Jobiak {
 			return success(catMap);
 
 		} catch (Exception e) {
-			e.printStackTrace();
 			return error("could not find response");
 		}
 	}
