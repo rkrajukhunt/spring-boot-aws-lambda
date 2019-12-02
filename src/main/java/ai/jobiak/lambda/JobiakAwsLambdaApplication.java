@@ -13,9 +13,9 @@ public class JobiakAwsLambdaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(JobiakAwsLambdaApplication.class, args);
 	}
-	
+
 	@Bean
-    public WebClient webClient() {
-        return new WebClient();
-    }
+	public WebClient webClient() {
+		return new WebClient();
+	}
 }

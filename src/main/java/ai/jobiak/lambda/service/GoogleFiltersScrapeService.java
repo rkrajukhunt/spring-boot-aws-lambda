@@ -58,7 +58,7 @@ public class GoogleFiltersScrapeService extends Jobiak {
 						if (t.hasAttribute("data-facet") && t.getAttribute("data-facet").equalsIgnoreCase(titleAttr)) {
 							if (!t.asText().equalsIgnoreCase("__placeholder__")
 									&& !t.asText().equalsIgnoreCase("all")) {
-								if(t.asText().length() > 0)
+								if (t.asText().length() > 0)
 									catMap.get(titleKeys.get(i)).add(t.asText());
 							}
 						}

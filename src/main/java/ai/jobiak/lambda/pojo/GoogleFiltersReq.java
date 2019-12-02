@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class GoogleFiltersReq {
-	
+
 	private String title;
 	private String location;
-	
+
 }
